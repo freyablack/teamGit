@@ -4,6 +4,8 @@ import './App.css';
 import Nasa from './nasa/Nasa';
 import Footer from './Footer';
 import TicketMaster from './ticketmaster/GetEvents';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './navbar/Navbar'
 
 // const footer = {
 //   position: 'absolute',
@@ -29,10 +31,11 @@ function App() {
 },);
   return (
     <div className="App">
+      <Navbar style={{background: 'black'}}/>
       <h1>24hr React App</h1>
-      {/* <Nasa lat={latitude} lon={longitude}/> */}
+      <Nasa lat={latitude} lon={longitude}/>
       <h3>Thinking about heading out today? Make sure to check the weather first!</h3>
-      {/* Weather App goes here! */}
+      <p>Sorry you'll have to check your phone, we couldn't pull from this api ¯\_(ツ)_/¯</p>
       <h3>Here's a list of events going on near you, take a look and see if there's one you'd like to attend!</h3>
       <TicketMaster/>
 
