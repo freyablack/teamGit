@@ -3,10 +3,10 @@ import "./nasa.css";
 import { Container, Button } from "reactstrap";
 
 const Location = () => {
-    const [longitude, setLongitude] = useState('');
-    const [latitude, setLatitude] = useState('');
-    const [img, setImg] = useState("");
-    const [load, setLoad] = useState('')
+  const [longitude, setLongitude] = useState('');
+  const [latitude, setLatitude] = useState('');
+  const [img, setImg] = useState("");
+  const [load, setLoad] = useState('')
 
   const getLocation = () => {
     // setLoad(true)
@@ -27,7 +27,7 @@ const Location = () => {
           });
         };
         navigator.geolocation.getCurrentPosition(position);
-    }
+      }
   };
 
   const buttonStyling = {
